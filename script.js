@@ -96,22 +96,35 @@ map.on("load", () => {
                 // レベル4
                 "Afghanistan", "#ff0000",
                 "Syria", "#ff0000",
+                "Sudan", "#ff0000",
+                "Ukraine", "#ff0000",
 
                 // レベル3
                 "Iraq", "#ff8800",
                 "Yemen", "#ff8800",
+                "Lebanon", "#ff8800",
+                "Pakistan", "#ff8800",
 
                 // レベル2
                 "Indonesia", "#ffff00",
                 "Thailand", "#ffff00",
                 "Mexico", "#ffff00",
+                "Philippines", "#ffff00",
+                "India", "#ffff00",
+                "Brazil", "#ffff00",
+                "South Africa", "#ffff00",
 
                 // レベル1
                 "Japan", "#00cc44",
                 "Australia", "#00cc44",
                 "Canada", "#00cc44",
+                
                 "United States of America", "#00cc44",
-
+                "New Zealand", "#00cc44",
+                "Norway", "#00cc44",
+                "Sweden", "#00cc44",
+                "Finland", "#00cc44",
+                "Switzerland", "#00cc44",
                 "#cccccc"
             ],
             "fill-opacity": 0.7
