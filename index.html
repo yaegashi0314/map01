@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界の危険度マップ</title>
+
+    <!-- MapLibre -->
+    <link href="https://unpkg.com/maplibre-gl@5.3.0/dist/maplibre-gl.css" rel="stylesheet">
+
+    <!-- 自分のCSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 凡例 -->
+    <div id="legend">
+        <h2>世界の危険度マップ</h2>
+
+        <div><span class="red"></span>レベル4（退避勧告）</div>
+        <div><span class="orange"></span>レベル3（渡航中止勧告）</div>
+        <div><span class="yellow"></span>レベル2（不要不急の渡航中止）</div>
+        <div><span class="green"></span>レベル1（十分注意）</div>
+    </div>
+    <div id="filter-box">
+
+    <h3>表示切替</h3>
+
+    <label>
+        <input type="checkbox" id="level1" checked>
+        レベル1
+    </label><br>
+
+    <label>
+        <input type="checkbox" id="level2" checked>
+        レベル2
+    </label><br>
+
+    <label>
+        <input type="checkbox" id="level3" checked>
+        レベル3
+    </label><br>
+
+    <label>
+        <input type="checkbox" id="level4" checked>
+        レベル4
+    </label>
+
+</div>
+    <div id="search-area">
+    <input
+        type="text"
+        id="countrySearch"
+        placeholder="国名を入力 (例: Japan)"
+    >
+    <button id="searchButton">検索</button>
+</div>
+
+    <!-- 地図 -->
+    <div id="map"></div>
+
+    <!-- MapLibre本体 -->
+    <script src="https://unpkg.com/maplibre-gl@5.3.0/dist/maplibre-gl.js"></script>
+
+    <!-- 自分のJavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
